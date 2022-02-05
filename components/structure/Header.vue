@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-gray-400">
+  <header>
     <div class="flex max-w-screen-xl mx-auto">
       <NavColourMode />
       <NavMain class="flex-grow" />

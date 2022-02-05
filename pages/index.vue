@@ -4,8 +4,9 @@
   </section>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 definePageMeta({
-  title: "my homepage",
+  title: "Home",
+  main: { position: 0 },
 });
 </script>

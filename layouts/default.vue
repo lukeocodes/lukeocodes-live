@@ -12,7 +12,9 @@ const store = useDarkMode();
 
     <main role="main" class="flex-grow">
       <div class="max-w-screen-xl mx-auto">
-        <NavBreadcrumbs />
+        <NavBreadcrumbs class="text-xs max-w-screen-xl" />
+      </div>
+      <div class="max-w-screen-xl mx-auto">
         <slot />
       </div>
     </main>
@@ -20,3 +22,9 @@ const store = useDarkMode();
     <StructureFooter />
   </div>
 </template>
+
+<style>
+* {
+  outline: red 1px solid;
+}
+</style>

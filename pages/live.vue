@@ -2,8 +2,9 @@
   <section>am i live?</section>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 definePageMeta({
-  title: "live on twitch",
+  title: "Live on Twitch",
+  main: { position: 1 },
 });
 </script>

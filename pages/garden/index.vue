@@ -2,8 +2,9 @@
   <section>garden</section>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 definePageMeta({
-  title: "my digital garden",
+  title: "Digital Garden",
+  main: { position: 3 },
 });
 </script>

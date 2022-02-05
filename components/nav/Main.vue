@@ -1,18 +1,21 @@
+<script setup lang="ts">
+interface Main {
+  position: number;
+}
+
+const mainRoutes = useRouter()
+  .getRoutes()
+  .filter((r) => "main" in r.meta)
+  .sort((a, b) => a.meta.main.position - b.meta.main.position);
+</script>
+
 <template>
   <nav aria-label="Primary navigation">
-    <ul class="flex flex-row-reverse space-x-3 space-x-reverse mt-2">
-      <li>
-        <NuxtLink to="/garden" class="px-2 py-1" tabindex="3">
-          Digital Garden
+    <ul class="flex justify-end space-x-3">
+      <li v-for="(route, index) in mainRoutes" :key="index">
+        <NuxtLink :to="route.path" class="px-2 py-1" :tabindex="index + 1">
+          {{ route.meta.title }}
         </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/working-with-me" class="px-2 py-1" tabindex="2">
-          Working with me
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/live" class="px-2 py-1" tabindex="1"> Live </NuxtLink>
       </li>
     </ul>
   </nav>

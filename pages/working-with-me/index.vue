@@ -2,8 +2,9 @@
   <section>lol good luck</section>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 definePageMeta({
-  title: "working with me",
+  title: "Working With Me",
+  main: { position: 2 },
 });
 </script>

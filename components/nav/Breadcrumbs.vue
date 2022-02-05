@@ -44,3 +44,26 @@ const ariaCurrent = (index) =>
     </ul>
   </nav>
 </template>
+
+<style scoped>
+#breadcrumbs > ul {
+  @apply flex space-x-1;
+}
+
+#breadcrumbs > ul > li {
+  @apply text-gray-600 dark:text-gray-300;
+}
+
+#breadcrumbs > ul > li:not(:first-child)::before {
+  content: "•";
+  @apply mr-1;
+}
+
+#breadcrumbs > ul > li > a {
+  @apply text-dark-600 dark:text-light-600 pr-1 py-1;
+}
+
+#breadcrumbs > ul > li:not(:first-child) > a {
+  @apply pl-1;
+}
+</style>
