@@ -31,8 +31,8 @@ const ariaCurrent = (index) =>
 </script>
 
 <template>
-  <nav aria-label="Breadcrumb">
-    <ul class="flex space-x-2">
+  <nav id="breadcrumbs" aria-label="Breadcrumb">
+    <ul>
       <li>
         <NuxtLink to="/" :aria-current="ariaCurrent(-1)">Home</NuxtLink>
       </li>
