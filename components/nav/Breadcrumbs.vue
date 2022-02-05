@@ -1,37 +1,29 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 const route = useRoute();
 const router = useRouter();
-</script>
 
-<script lang="ts">
-export default {
-  methods: {
-    getBreadcrumbs() {
-      const fullPath = this.route.path;
-      const requestPath = fullPath.startsWith("/")
-        ? fullPath.substring(1)
-        : fullPath;
-      const crumbs = requestPath.split("/");
-      const breadcrumbs = [];
+const getBreadcrumbs = () => {
+  const fullPath = route.path;
+  const requestPath = fullPath.startsWith("/")
+    ? fullPath.substring(1)
+    : fullPath;
+  const crumbs = requestPath.split("/");
+  const breadcrumbs = [];
 
-      let path = "";
+  let path = "";
 
-      crumbs.forEach((crumb, index) => {
-        if (crumb) {
-          path = `${path}/${crumb}`;
-          const breadcrumb = this.router
-            .getRoutes()
-            .find((route) => route.path === path);
+  crumbs.forEach((crumb) => {
+    if (crumb) {
+      path = `${path}/${crumb}`;
+      const breadcrumb = router.getRoutes().find((r) => r.path === path);
 
-          if (breadcrumb) {
-            breadcrumbs.push(breadcrumb);
-          }
-        }
-      });
+      if (breadcrumb) {
+        breadcrumbs.push(breadcrumb);
+      }
+    }
+  });
 
-      return breadcrumbs;
-    },
-  },
+  return breadcrumbs;
 };
 </script>
 

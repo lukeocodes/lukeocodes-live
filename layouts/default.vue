@@ -4,10 +4,11 @@ const store = useDarkMode();
 </script>
 
 <template>
-  <div class="flex flex-col h-screen bg-light-600 dark:bg-dark-600">
+  <div
+    :class="store.isDark ? 'dark' : ''"
+    class="flex flex-col h-screen bg-light-600 dark:bg-dark-600"
+  >
     <StructureHeader />
-
-    {{ store.isDark }}
 
     <main role="main" class="flex-grow">
       <div class="max-w-screen-xl mx-auto">
