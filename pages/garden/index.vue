@@ -1,11 +1,9 @@
 <template>
-  <section>
-    <ArticleCard />
-  </section>
+  <section>garden</section>
 </template>
 
 <script setup>
 definePageMeta({
-  title: "my homepage",
+  title: "my digital garden",
 });
 </script>

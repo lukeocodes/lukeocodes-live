@@ -1,11 +1,9 @@
 <template>
-  <section>
-    <ArticleCard />
-  </section>
+  <section>as a colleague</section>
 </template>
 
 <script setup>
 definePageMeta({
-  title: "my homepage",
+  title: "being my colleague",
 });
 </script>

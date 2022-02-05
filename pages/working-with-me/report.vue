@@ -1,11 +1,9 @@
 <template>
-  <section>
-    <ArticleCard />
-  </section>
+  <section>as a report</section>
 </template>
 
 <script setup>
 definePageMeta({
-  title: "my homepage",
+  title: "working as my report",
 });
 </script>
