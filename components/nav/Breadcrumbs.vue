@@ -25,16 +25,21 @@ const getBreadcrumbs = () => {
 
   return breadcrumbs;
 };
+
+const ariaCurrent = (index) =>
+  index === getBreadcrumbs().length - 1 ? "page" : "false";
 </script>
 
 <template>
-  <nav>
+  <nav aria-label="Breadcrumb">
     <ul class="flex space-x-2">
       <li>
-        <NuxtLink to="/">Home</NuxtLink>
+        <NuxtLink to="/" :aria-current="ariaCurrent(-1)">Home</NuxtLink>
       </li>
       <li v-for="(breadcrumb, index) in getBreadcrumbs()" :key="index">
-        <NuxtLink :to="breadcrumb.path">{{ breadcrumb.meta.title }}</NuxtLink>
+        <NuxtLink :to="breadcrumb.path" :aria-current="ariaCurrent(index)">
+          {{ breadcrumb.meta.title }}
+        </NuxtLink>
       </li>
     </ul>
   </nav>
