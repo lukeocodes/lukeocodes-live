@@ -51,7 +51,7 @@ const ariaCurrent = (index) =>
 }
 
 #breadcrumbs > ul > li {
-  @apply text-gray-600 dark:text-gray-300;
+  @apply text-gray-500 dark:text-gray-400;
 }
 
 #breadcrumbs > ul > li:not(:first-child)::before {
@@ -60,7 +60,7 @@ const ariaCurrent = (index) =>
 }
 
 #breadcrumbs > ul > li > a {
-  @apply text-dark-600 dark:text-light-600 pr-1 py-1;
+  @apply text-gray-500 dark:text-gray-400 pr-1 py-1;
 }
 
 #breadcrumbs > ul > li:not(:first-child) > a {

@@ -4,6 +4,6 @@
 
 <script setup>
 definePageMeta({
-  title: "working as my report",
+  title: "As my Report",
 });
 </script>

@@ -11,8 +11,8 @@ const store = useDarkMode();
     <StructureHeader />
 
     <main role="main" class="flex-grow">
-      <div class="max-w-screen-xl mx-auto">
-        <NavBreadcrumbs class="text-xs max-w-screen-xl" />
+      <div class="max-w-screen-xl mx-auto text-xs">
+        <NavBreadcrumbs class="max-w-screen-xl" />
       </div>
       <div class="max-w-screen-xl mx-auto">
         <slot />

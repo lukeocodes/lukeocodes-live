@@ -4,6 +4,6 @@
 
 <script setup>
 definePageMeta({
-  title: "being my colleague",
+  title: "As a Colleague",
 });
 </script>
