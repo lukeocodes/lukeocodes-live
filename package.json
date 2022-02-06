@@ -10,6 +10,7 @@
     "nuxt3": "latest"
   },
   "dependencies": {
+    "@heroicons/vue": "^1.0.5",
     "@pinia/nuxt": "^0.1.8",
     "pinia": "^2.0.11"
   }
