@@ -8,4 +8,9 @@ export default defineConfig({
       dark: true,
     }),
   ],
+  theme: {
+    extend: {
+      colors: {},
+    },
+  },
 });
