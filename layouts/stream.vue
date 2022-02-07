@@ -11,20 +11,7 @@ const darkMode = useDarkMode();
       <Body :class="darkMode.isDark ? 'dark' : ''" />
     </Html>
 
-    <StructureHeader />
-
-    <main role="main" class="flex-grow">
-      <div
-        class="max-w-screen-xl mx-auto text-xs"
-        v-if="!$route.meta.nobreadcrumb"
-      >
-        <NavBreadcrumbs class="max-w-screen-xl" />
-      </div>
-      <div class="max-w-screen-xl mx-auto">
-        <slot />
-      </div>
-    </main>
-
+    <div class="flex-grow"></div>
     <StructureFooter />
   </div>
 </template>

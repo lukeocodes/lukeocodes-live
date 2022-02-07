@@ -10,12 +10,12 @@ const darkMode = useDarkMode();
   <button @click="darkMode.toggle()">
     <SunIcon
       v-show="!darkMode.isDark"
-      class="w-4 h-4 text-yellow-500"
+      class="svg-icon stroke text-yellow-500"
       aria-hidden="true"
     />
     <MoonIcon
       v-show="darkMode.isDark"
-      class="w-4 h-4 text-light-600"
+      class="svg-icon stroke text-light-600"
       aria-hidden="true"
     />
   </button>

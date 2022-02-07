@@ -6,8 +6,7 @@
 
 <script lang="ts" setup>
 definePageMeta({
-  title: "Home",
-  main: { position: 0 },
-  nobreadcrumb: true,
+  title: "Stream Scene",
+  layout: "stream",
 });
 </script>

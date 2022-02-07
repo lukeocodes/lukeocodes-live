@@ -10,7 +10,11 @@ export default defineConfig({
   ],
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        twitter: "#1DA1F2",
+        github: "#181717",
+        polywork: "#543DE0",
+      },
     },
   },
 });

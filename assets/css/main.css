@@ -1,0 +1,18 @@
+.svg-icon {
+  @apply mt-1;
+  height: 1em;
+  width: 1em;
+  stroke: none;
+  fill: none;
+}
+
+.svg-icon.fill {
+  @apply fill-current;
+}
+
+.svg-icon.stroke {
+  @apply stroke-current;
+  @apply stroke-2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
