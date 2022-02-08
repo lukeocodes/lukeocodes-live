@@ -17,7 +17,7 @@ exports.handler = async (event, context, callback) => {
   const {
     data: { data: streams },
   } = await axios.get(
-    `https://api.twitch.tv/helix/streams?user_login=lukeocodes`,
+    `https://api.twitch.tv/helix/streams?user_login=${process.env.TWITCH_CHANNEL_NAME}`,
     {
       headers: {
         "Client-ID": process.env.TWITCH_CLIENT_ID,

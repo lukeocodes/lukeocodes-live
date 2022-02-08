@@ -7,6 +7,10 @@ if (!process.server) {
     darkMode.setDark(window.matchMedia("(prefers-color-scheme: dark)").matches);
   }
 }
+
+// const { data } = await useLazyAsyncData("live-on-twitch", () =>
+//   $fetch("/api/live-on-twitch")
+// );
 </script>
 
 <template>
