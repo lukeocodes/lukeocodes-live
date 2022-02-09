@@ -24,39 +24,33 @@ const character = ref(PetCharacter.Greg);
 const position = ref(1);
 const status = ref(PetStatus.Idle);
 const right = ref(false);
-const maxPosition = process.browser ? window.innerWidth : 1920;
+const timeToPosition = ref(0);
+const maxPosition = process.server ? 1920 : window.innerWidth;
 
-const events = ref([{ actions: [{ name: "move" }, { name: "move" }] }]);
+let timeout;
 
-const possibleEvents = {
-  move: { actions: [{ name: "move" }, { name: "move" }] },
+const walkTo = (newPosition: number, speed: number = 100): void => {
+  clearTimeout(timeout);
+  const pxToMove = Math.abs(position.value - newPosition);
+
+  if (newPosition > position.value) {
+    right.value = true;
+  } else {
+    right.value = false;
+  }
+
+  timeToPosition.value = pxToMove / speed;
+  position.value = newPosition;
+  status.value = PetStatus.Walking;
+
+  timeout = setTimeout(() => {
+    status.value = PetStatus.Idle;
+    clearTimeout(timeout);
+  }, timeToPosition.value * 1000);
 };
 
-const currentEvent = null;
-
-const hasEvent = !!events.value.find((x) => x !== undefined);
-
-const queueEvent = (eventName: string): void => {};
-
-// const changeDirection = (): void => {
-//   right.value = !right.value;
-// };
-
-// const startWalking = (): void => {
-//   status.value = PetStatus.Walking;
-// };
-
-// const stopWalking = (): void => {
-//   status.value = PetStatus.Idle;
-// };
-
-// const walkTo = (position: number): void => {
-//   position = position;
-// };
-
 const randPosition = (): number => {
-  console.log(maxPosition, Math.floor(Math.random() * maxPosition));
-  return Math.random() * maxPosition;
+  return Math.floor(Math.random() * maxPosition);
 };
 
 // export default function usePet(): Pet {
@@ -66,6 +60,8 @@ export default function usePet() {
     position,
     status,
     right,
+    timeToPosition,
+    walkTo,
     randPosition,
   };
 }
