@@ -18,3 +18,9 @@ if (!process.server) {
     <NuxtPage />
   </NuxtLayout>
 </template>
+
+<style>
+* {
+  outline: 1px solid red;
+}
+</style>
