@@ -11,7 +11,7 @@ const darkMode = useDarkMode();
     @click="darkMode.toggle()"
     aria-label="Dark mode enabled"
     role="switch"
-    :aria-checked="darkMode.isDark"
+    :aria-checked="darkMode.isDark ? 'true' : 'false'"
   >
     <SunIcon
       v-show="!darkMode.isDark"
