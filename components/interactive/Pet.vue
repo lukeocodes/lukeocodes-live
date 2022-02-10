@@ -1,15 +1,7 @@
 <script lang="ts" setup>
 import usePet from "@/composables/pet";
 
-const {
-  position,
-  character,
-  right,
-  status,
-  timeToPosition,
-  walkTo,
-  randPosition,
-} = usePet();
+const { position, character, right, status, timeToPosition } = usePet();
 </script>
 
 <template>
@@ -20,16 +12,15 @@ const {
       left: `${position}px`,
       transition: `left ${timeToPosition}s linear`,
     }"
-    @click="walkTo(randPosition())"
   />
 </template>
 
 <style scoped>
 #pet {
   margin-top: -4.25rem;
-  width: 4rem;
-  height: 4rem;
-  background-size: auto 4rem;
+  width: 64px;
+  height: 64px;
+  background-size: auto 64px;
   /* left: 0; */
   position: absolute;
   background-image: url("assets/images/dino/sheets/greg.png");

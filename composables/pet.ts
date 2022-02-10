@@ -1,4 +1,4 @@
-import { readonly, ref, Ref } from "vue";
+import { Ref } from "vue";
 
 enum PetCharacter {
   Greg = "greg",
@@ -20,12 +20,19 @@ interface Pet {
   right: Ref<boolean>;
 }
 
+function randCharacter<T>(): T[keyof T] {
+  const characters = Object.values(PetCharacter) as unknown as T[keyof T][];
+  const character = Math.floor(Math.random() * characters.length);
+
+  return characters[character];
+}
+
 const character = ref(PetCharacter.Greg);
 const position = ref(1);
 const status = ref(PetStatus.Idle);
 const right = ref(false);
 const timeToPosition = ref(0);
-const maxPosition = process.server ? 1920 : window.innerWidth;
+const maxPosition = (process.server ? 1920 : window.innerWidth) - 64;
 
 let timeout;
 
@@ -39,6 +46,7 @@ const walkTo = (newPosition: number, speed: number = 100): void => {
     right.value = false;
   }
 
+  character.value = randCharacter();
   timeToPosition.value = pxToMove / speed;
   position.value = newPosition;
   status.value = PetStatus.Walking;

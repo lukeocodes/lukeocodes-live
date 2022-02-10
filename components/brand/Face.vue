@@ -1,10 +1,20 @@
+<script lang="ts" setup>
+import usePet from "@/composables/pet";
+
+const { walkTo, randPosition } = usePet();
+</script>
+
 <template>
-  <img src="~/assets/images/avatar/avatar@300px.png" />
+  <img
+    src="~/assets/images/avatar/avatar@300px.png"
+    @click="walkTo(randPosition())"
+  />
 </template>
 
 <style scoped>
 img {
   transform: scale(1);
+  cursor: pointer;
 }
 img:hover {
   animation: shake 10s;
