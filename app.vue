@@ -14,13 +14,18 @@ if (!process.server) {
 </script>
 
 <template>
-  <NuxtLayout>
+  <NuxtLayout
+    class="bg-light-900 dark:bg-dark-600 dark:text-light-900 text-dark-600 bg-dino"
+  >
     <NuxtPage />
   </NuxtLayout>
 </template>
 
 <style>
-* {
-  outline: 1px solid red;
+.bg-dino {
+  background-image: url("~/assets/images/bg/dinos_30.png");
+  background-repeat: repeat;
+  background-position: 50% 0;
+  background-size: center;
 }
 </style>
