@@ -6,6 +6,7 @@ const { walkTo, randPosition } = usePet();
 
 <template>
   <img
+    alt="Caricature of Luke's face used as his brand logo"
     src="~/assets/images/avatar/avatar@300px.png"
     @click="walkTo(randPosition())"
   />

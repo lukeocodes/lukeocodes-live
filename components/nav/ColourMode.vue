@@ -7,7 +7,12 @@ const darkMode = useDarkMode();
 </script>
 
 <template>
-  <button @click="darkMode.toggle()">
+  <button
+    @click="darkMode.toggle()"
+    aria-label="Dark mode enabled"
+    role="switch"
+    :aria-checked="darkMode.isDark"
+  >
     <SunIcon
       v-show="!darkMode.isDark"
       class="svg-icon stroke text-yellow-500"

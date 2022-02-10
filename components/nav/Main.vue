@@ -15,7 +15,6 @@ const ariaCurrent = (index) =>
         <NuxtLink
           :to="route.path"
           class="px-2 py-1"
-          :tabindex="index + 1"
           :aria-current="ariaCurrent(index)"
         >
           {{ route.meta.title }}
