@@ -4,7 +4,7 @@ const darkMode = useDarkMode();
 </script>
 
 <template>
-  <div class="flex flex-col min-h-screen">
+  <div class="flex flex-col">
     <Html>
       <Body :class="darkMode.isDark ? 'dark' : ''" />
     </Html>

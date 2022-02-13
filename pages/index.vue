@@ -1,9 +1,3 @@
-<template>
-  <section>
-    <!-- <BrandFace /> -->
-  </section>
-</template>
-
 <script lang="ts" setup>
 definePageMeta({
   title: "Home",
@@ -11,3 +5,7 @@ definePageMeta({
   nobreadcrumb: true,
 });
 </script>
+
+<template>
+  <section>wefwfewf</section>
+</template>

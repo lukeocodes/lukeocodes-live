@@ -15,7 +15,7 @@ if (!process.server) {
 
 <template>
   <NuxtLayout
-    class="bg-light-900 dark:bg-dark-600 dark:text-light-900 text-dark-600 bg-dino"
+    class="bg-light-500 dark:bg-dark-600 dark:text-light-500 text-dark-600 bg-dino min-h-screen"
   >
     <Html lang="en-GB">
       <Head>

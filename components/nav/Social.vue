@@ -1,6 +1,8 @@
 <template>
   <nav aria-label="Social links">
-    <ul class="flex space-x-8">
+    <ul
+      class="flex flex-col lg:items-center lg:flex-row lg:items-start space-y-4 lg:space-y-0 lg:space-x-8 mt-8 lg:mt-0"
+    >
       <li>
         <a href="https://twitter.com/lukeocodes" target="_blank" class="flex">
           <IconTwitter class="svg-icon fill text-twitter mr-2" />
