@@ -5,9 +5,11 @@ definePageMeta({
   nobreadcrumb: true,
 });
 
-const { data: hello } = await useFetch("/api/hello");
+const { data: hello } = useFetch("/api/hello");
 </script>
 
 <template>
   <section>{{ hello }}</section>
+  <InteractivePet />
+  <BrandFace />
 </template>

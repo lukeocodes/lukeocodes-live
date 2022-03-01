@@ -4,21 +4,18 @@ const darkMode = useDarkMode();
 </script>
 
 <template>
-  <div class="flex flex-col">
+  <div>
     <Html>
       <Body :class="darkMode.isDark ? 'dark' : ''" />
     </Html>
 
     <StructureHeader />
 
-    <main role="main" class="flex-grow">
-      <div
-        class="max-w-screen-xl mx-auto text-xs"
-        v-if="!$route.meta.nobreadcrumb"
-      >
+    <main role="main">
+      <div v-if="!$route.meta.nobreadcrumb">
         <NavBreadcrumbs class="max-w-screen-xl" />
       </div>
-      <div class="max-w-screen-xl mx-auto">
+      <div>
         <slot />
       </div>
     </main>

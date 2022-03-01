@@ -21,7 +21,6 @@ const isLive = true;
 .live-on-twitch {
   @apply border border-dark-600 dark:border-light-600;
 }
-
 .light.blink {
   width: 1em;
   height: 1em;

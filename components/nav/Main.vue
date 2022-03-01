@@ -10,7 +10,7 @@ const ariaCurrent = (index) =>
 
 <template>
   <nav aria-label="Primary navigation">
-    <ul class="flex justify-end space-x-3">
+    <ul>
       <li v-for="(route, index) in mainRoutes" :key="index">
         <NuxtLink
           :to="route.path"

@@ -20,25 +20,4 @@
   </section>
 </template>
 
-<style scoped>
-nav > ul {
-  @apply flex justify-center space-x-1;
-}
-
-nav > ul > li {
-  @apply text-gray-600 dark:text-gray-300;
-}
-
-nav > ul > li:not(:first-child)::before {
-  content: "•";
-  @apply mr-1;
-}
-
-nav > ul > li > a {
-  @apply text-dark-600 dark:text-light-600 pr-1 py-1;
-}
-
-nav > ul > li:not(:first-child) > a {
-  @apply pl-1;
-}
-</style>
+<style scoped></style>

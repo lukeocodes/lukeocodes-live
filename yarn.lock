@@ -3202,7 +3202,7 @@ number-is-nan@^1.0.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
-nuxt-windicss@^2.2.4:
+nuxt-windicss@^2.2.7:
   version "2.2.7"
   resolved "https://registry.yarnpkg.com/nuxt-windicss/-/nuxt-windicss-2.2.7.tgz#a23d92031ff8f5208d6c4f04999f3a55d969112f"
   integrity sha512-I1vtaEpAnu71kCDSGpjXuhd4f+JtDRLEzOVx3/5xf4uGkj2NzuvPrqLxXwGUY0pFZ+cW62kjyuE4hMhawn1srQ==

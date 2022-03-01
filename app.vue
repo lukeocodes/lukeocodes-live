@@ -14,9 +14,7 @@ if (!process.server) {
 </script>
 
 <template>
-  <NuxtLayout
-    class="bg-light-500 dark:bg-dark-600 dark:text-light-500 text-dark-600 bg-dino min-h-screen"
-  >
+  <NuxtLayout>
     <Html lang="en-GB">
       <Head>
         <Title>@lukeocodes Live - Personal site and blog for Luke Oliff</Title>
