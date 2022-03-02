@@ -1,6 +1,5 @@
 <script setup>
-import { SunIcon } from "@heroicons/vue/outline/index.js";
-import { MoonIcon } from "@heroicons/vue/outline/index.js";
+import { SunIcon, MoonIcon } from "@heroicons/vue/outline/index.js";
 import { useDarkMode } from "~/stores/darkMode";
 
 const darkMode = useDarkMode();

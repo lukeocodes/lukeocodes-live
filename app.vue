@@ -8,6 +8,8 @@ if (!process.server) {
   }
 }
 
+const config = useRuntimeConfig();
+
 // const { data } = await useLazyAsyncData("live-on-twitch", () =>
 //   $fetch("/api/live-on-twitch")
 // );
@@ -40,6 +42,7 @@ if (!process.server) {
           href="/favicon-16x16.png"
         />
         <Link rel="manifest" href="/site.webmanifest" />
+        <Link rel="canonical" :href="`${config.BASE_URL}${$route.fullPath}`" />
       </Head>
     </Html>
 

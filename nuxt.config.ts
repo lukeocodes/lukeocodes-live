@@ -3,6 +3,9 @@ import { defineNuxtConfig } from "nuxt3";
 export default defineNuxtConfig({
   css: ["@/assets/css/main.css"],
   buildModules: ["nuxt-windicss", "@pinia/nuxt"],
+  publicRuntimeConfig: {
+    BASE_URL: process.env.URL,
+  },
   privateRuntimeConfig: {
     CONTENTFUL_SPACE_ID: process.env.CONTENTFUL_SPACE_ID,
     CONTENT_ENV_ID: process.env.CONTENT_ENV_ID,

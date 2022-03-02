@@ -9,6 +9,7 @@ const { data: hello } = useFetch("/api/hello");
 </script>
 
 <template>
+  <PageIndexHero />
   <section>{{ hello }}</section>
   <InteractivePet />
   <BrandFace />

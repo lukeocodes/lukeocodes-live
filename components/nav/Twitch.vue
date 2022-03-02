@@ -6,7 +6,7 @@ const isLive = true;
 </script>
 
 <template>
-  <nav aria-label="Primary navigation" class="ml-3">
+  <nav aria-label="Primary navigation">
     <NuxtLink v-show="isLive" to="/live" class="px-2 py-1 live-on-twitch ml-3">
       <div class="light blink"></div>
       Live Now
