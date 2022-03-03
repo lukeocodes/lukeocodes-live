@@ -2,7 +2,8 @@ import { defineNuxtConfig } from "nuxt3";
 
 export default defineNuxtConfig({
   css: ["@/assets/css/main.css"],
-  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
+  buildModules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/color-mode"],
   publicRuntimeConfig: {
     BASE_URL: process.env.URL,
   },
