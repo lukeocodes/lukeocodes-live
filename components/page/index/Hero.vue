@@ -9,7 +9,6 @@
     <div class="h-screen w-full layer behind-bridge"></div>
     <div class="h-screen w-full layer bridge-foreground"></div>
     <div class="h-screen w-full layer first-foreground"></div>
-    .
   </div>
 </template>
 

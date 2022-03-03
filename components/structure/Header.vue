@@ -1,12 +1,8 @@
-<script setup>
-const open = ref(false);
-</script>
-
 <template>
-  <header class="sticky flex">
+  <header class="flex py-3 h-12">
     <NavColourMode />
-    <NavMain class="lg:block" :class="{ block: open, hidden: !open }" />
-    <NavTwitch class="lg:block" :class="{ block: open, hidden: !open }" />
-    <NavDraw class="block lg:hidden" @click="open = !open" />
+    <NavMain class="lg:block" />
+    <NavTwitch class="lg:block" />
+    <NavDraw class="block lg:hidden" />
   </header>
 </template>

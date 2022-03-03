@@ -1,6 +1,6 @@
 <template>
-  <NavAnnouncement />
-  <StructureHeader />
+  <!-- <NavAnnouncement /> -->
+  <StructureHeader class="z-10" />
 
   <main role="main" class="relative">
     <div v-if="!$route.meta.nobreadcrumb">
@@ -11,5 +11,5 @@
     </div>
   </main>
 
-  <StructureFooter />
+  <StructureFooter class="z-10" />
 </template>
