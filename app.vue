@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { useDarkMode } from "~/stores/darkMode";
-const darkMode = useDarkMode();
+// import { useDarkMode } from "~/stores/darkMode";
+// const darkMode = useDarkMode();
 
-if (!process.server) {
-  if (darkMode.isNull) {
-    darkMode.setDark(window.matchMedia("(prefers-color-scheme: dark)").matches);
-  }
-}
+// if (!process.server) {
+//   if (darkMode.isNull) {
+//     darkMode.setDark(window.matchMedia("(prefers-color-scheme: dark)").matches);
+//   }
+// }
 
 const config = useRuntimeConfig();
 
@@ -45,6 +45,7 @@ const config = useRuntimeConfig();
         <Link rel="canonical" :href="`${config.BASE_URL}${$route.fullPath}`" />
       </Head>
     </Html>
+    <Body class="dark:bg-gray-800 dark:text-gray-200" />
 
     <NuxtPage />
   </NuxtLayout>

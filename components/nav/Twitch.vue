@@ -19,7 +19,7 @@ const isLive = true;
 
 <style scoped>
 .live-on-twitch {
-  @apply border border-dark-600 dark:border-light-600;
+  @apply border border-black dark:border-white;
 }
 .light.blink {
   width: 1em;

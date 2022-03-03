@@ -10,7 +10,7 @@ const { data: hello } = useFetch("/api/hello");
 
 <template>
   <PageIndexHero />
-  <section>{{ hello }}</section>
+  <!-- <section>{{ hello }}</section>
   <InteractivePet />
-  <BrandFace />
+  <BrandFace /> -->
 </template>
