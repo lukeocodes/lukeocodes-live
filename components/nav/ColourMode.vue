@@ -1,7 +1,7 @@
 <script setup>
 import { SunIcon, MoonIcon } from "@heroicons/vue/outline/index.js";
-const colorMode = useColorMode();
-colorMode.preference = colorMode.value;
+// const colorMode = useColorMode();
+// colorMode.preference = colorMode.value;
 </script>
 
 <template>
