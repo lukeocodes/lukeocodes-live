@@ -18,14 +18,14 @@
 }
 
 .base {
-  @apply bg-bottom bg-fixed;
+  @apply bg-bottom bg-fixed bg-repeat-x;
   /* transform-origin: 0 100px; */
   perspective: 40px;
   overflow: hidden;
 }
 
 .layer {
-  @apply absolute w-screen bg-bottom bg-fixed;
+  @apply absolute w-screen bg-bottom bg-fixed bg-repeat-x;
 }
 
 .background {
