@@ -21,11 +21,14 @@
   @apply bg-bottom bg-fixed bg-repeat-x;
   /* transform-origin: 0 100px; */
   perspective: 40px;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-y: visible;
 }
 
 .layer {
   @apply absolute w-screen bg-bottom bg-fixed bg-repeat-x;
+  overflow-y: hidden;
+  overflow-y: visible;
 }
 
 .background {
@@ -73,5 +76,6 @@
 .first-foreground {
   background-image: url("assets/images/scene/first-foreground.png");
   transform: translateZ(-4px);
+  zoom: 1;
 }
 </style>
