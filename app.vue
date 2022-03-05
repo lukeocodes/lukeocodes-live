@@ -32,6 +32,7 @@ const config = useRuntimeConfig();
         <Link rel="canonical" :href="`${config.BASE_URL}${$route.fullPath}`" />
       </Head>
     </Html>
+
     <Body class="dark:bg-gray-800 dark:text-gray-200" />
 
     <NuxtPage />

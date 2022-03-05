@@ -1,20 +1,31 @@
 <template>
-  <div class="w-full h-screen bg-center bg-no-repeat bg-cover background">
-    <div class="h-screen w-full layer stars"></div>
-    <div class="h-screen w-full layer sun"></div>
-    <div class="h-screen w-full layer last-crane"></div>
-    <div class="h-screen w-full layer infront-last-crane"></div>
-    <div class="h-screen w-full layer second-crane"></div>
-    <div class="h-screen w-full layer first-crane"></div>
-    <div class="h-screen w-full layer behind-bridge"></div>
-    <div class="h-screen w-full layer bridge-foreground"></div>
-    <div class="h-screen w-full layer first-foreground"></div>
+  <div class="height w-full base background">
+    <div class="height layer stars"></div>
+    <div class="height layer sun"></div>
+    <div class="height layer last-crane"></div>
+    <div class="height layer infront-last-crane"></div>
+    <div class="height layer second-crane"></div>
+    <div class="height layer first-crane"></div>
+    <div class="height layer behind-bridge"></div>
+    <div class="height layer bridge-foreground"></div>
+    <div class="height layer first-foreground"></div>
   </div>
 </template>
 
 <style scoped>
+.height {
+  @apply h-[calc(100vh-5em)];
+}
+
+.base {
+  @apply bg-bottom bg-fixed;
+  /* transform-origin: 0 100px; */
+  perspective: 40px;
+  overflow: hidden;
+}
+
 .layer {
-  @apply absolute top-0 left-0 right-0 bottom-0 w-full bg-center bg-no-repeat bg-cover;
+  @apply absolute w-screen bg-bottom bg-fixed;
 }
 
 .background {
@@ -31,29 +42,36 @@
 
 .last-crane {
   background-image: url("assets/images/scene/last-crane.png");
+  transform: translateZ(-1px);
 }
 
 .infront-last-crane {
   background-image: url("assets/images/scene/infront-last-crane.png");
+  transform: translateZ(-2px);
 }
 
 .second-crane {
   background-image: url("assets/images/scene/second-crane.png");
+  transform: translateZ(-2px);
 }
 
 .first-crane {
   background-image: url("assets/images/scene/first-crane.png");
+  transform: translateZ(-3px);
 }
 
 .behind-bridge {
   background-image: url("assets/images/scene/behind-bridge.png");
+  transform: translateZ(-3px);
 }
 
 .bridge-foreground {
   background-image: url("assets/images/scene/bridge-foreground.png");
+  transform: translateZ(-4px);
 }
 
 .first-foreground {
   background-image: url("assets/images/scene/first-foreground.png");
+  transform: translateZ(-4px);
 }
 </style>

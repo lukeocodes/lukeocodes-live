@@ -10,6 +10,11 @@ const { data: hello } = useFetch("/api/hello");
 
 <template>
   <PageIndexHero />
+  <br />. <br />. <br />. <br />. <br />. <br />. <br />. <br />. <br />.
+  <br />. <br />. <br />. <br />. <br />. <br />. <br />. <br />. <br />.
+  <br />. <br />. <br />. <br />. <br />. <br />. <br />. <br />. <br />.
+  <br />. <br />. <br />. <br />. <br />. <br />. <br />. <br />. <br />.
+  <br />. <br />. <br />. <br />. <br />. <br />. <br />. <br />. <br />.
   <!-- <section>{{ hello }}</section>
   <InteractivePet />
   <BrandFace /> -->

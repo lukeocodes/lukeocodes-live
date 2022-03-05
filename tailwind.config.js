@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "african-violet": "#b993c2",
         twitter: "#1DA1F2",
         github: "#181717",
         polywork: "#543DE0",
