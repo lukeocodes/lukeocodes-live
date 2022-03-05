@@ -21,14 +21,13 @@
   @apply bg-bottom bg-fixed bg-repeat-x;
   /* transform-origin: 0 100px; */
   perspective: 40px;
-  overflow-y: hidden;
-  overflow-y: visible;
+  overflow: hidden;
 }
 
 .layer {
   @apply absolute w-screen bg-bottom bg-fixed bg-repeat-x;
   overflow-y: hidden;
-  overflow-y: visible;
+  overflow-x: visible;
 }
 
 .background {
@@ -45,37 +44,36 @@
 
 .last-crane {
   background-image: url("assets/images/scene/last-crane.png");
-  transform: translateZ(-1px);
+  transform: translateZ(5px);
 }
 
 .infront-last-crane {
   background-image: url("assets/images/scene/infront-last-crane.png");
-  transform: translateZ(-2px);
+  transform: translateZ(4px);
 }
 
 .second-crane {
   background-image: url("assets/images/scene/second-crane.png");
-  transform: translateZ(-2px);
+  transform: translateZ(4px);
 }
 
 .first-crane {
   background-image: url("assets/images/scene/first-crane.png");
-  transform: translateZ(-3px);
+  transform: translateZ(3px);
 }
 
 .behind-bridge {
   background-image: url("assets/images/scene/behind-bridge.png");
-  transform: translateZ(-3px);
+  transform: translateZ(2px);
 }
 
 .bridge-foreground {
   background-image: url("assets/images/scene/bridge-foreground.png");
-  transform: translateZ(-4px);
+  transform: translateZ(1px);
 }
 
 .first-foreground {
   background-image: url("assets/images/scene/first-foreground.png");
-  transform: translateZ(-4px);
-  zoom: 1;
+  transform: translateZ(0px);
 }
 </style>
